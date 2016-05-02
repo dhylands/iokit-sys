@@ -22,6 +22,18 @@ pub fn kIOSerialBSDRS232Type() -> *const c_char {
     b"IORS232SerialStream\0".as_ptr() as *const c_char
 }
 
+pub fn kIOUSBDeviceType() -> *const c_char {
+    b"IOUSBDevice\0".as_ptr() as *const c_char
+}
+
+pub fn kIOUSBInterfaceType() -> *const c_char {
+    b"IOUSBInterface\0".as_ptr() as *const c_char
+}
+
+pub fn kIOServiceKey() -> *const c_char {
+    b"IOService\0".as_ptr() as *const c_char
+}
+
 pub fn kIOTTYDeviceKey() -> *const c_char {
     b"IOTTYDevice\0".as_ptr() as *const c_char
 }
